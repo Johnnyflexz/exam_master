@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam master.com</title>
+</head>
+<body>
+    <!--Header section-->
+    <header>
+        <div class="logo">
+            <h1>Exam Master</h1>
+            <p>Your Path to Success</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="john.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="dokun.html">Courses</a></li>
+                <li><a href="login form.html">Exam</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main Section-->
+    <main>
+        <section class="intro">
+            <h2>Welcome to Exam Master</h2>
+            <p>We provide am exellent platform for students to prepare and excel in their exams.</p>
+            <button id="startExamBtn">Start Exam</button>
+        </section>
+
+        <section class="about">
+            <h2>About Us</h2>
+            <p>Exam Master is designed to help students get ready for their exams by providing comprehensive course material, mock 
+                test, and expert guidance.
+            </p>
+        </section>
+
+        <section class="features">
+            <h2>Our Features</h2>
+            <div class="features-cards">
+                <div class="card">
+                    <h3>Mock Tests</h3>
+                    <p>Get ready for your exams with our mock test that simulate real exam conditions</p>
+                </div>
+
+                <div class="card">
+                    <h3>Study material</h3>
+                    <p>Access high-quality study materials and resources tailored to your needs.</p>
+                </div>
+                <div class="card">
+                <h3>Expert Mentorship</h3>
+                    <p>Our experienced mentors are here to guide you and help you excel.</p>
+                    </div>
+            </div>
+        </section>
+    </main> 
+    <!--footer section-->
+    <footer>
+        <p>&copy: 2025 Exam Master | All Rights Reserved</p>
+    </footer>
+    
+    <!--css stlye-->
+    <style>
+        body{
+            font-family: arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e2e7ee;
+        }
+
+        h1, h2, h3{
+            color: #333;
+        }
+
+        header{
+            background-color: #4caf50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header .logo h1{
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+
+        header nav ul li{
+            display: inline;
+            margin: 0 15px;
+        }
+
+        header nav ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        header nav ul li a:hover{
+            text-decoration: underline;
+        }
+
+        main{
+            padding: 20px;
+            background-color: #e2e7ee;
+        }
+
+        .intro{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h2{
+            font-size: 32px;
+        }
+
+        button{
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button:hover{
+            background-color: #45a049;
+        }
+
+        .about .features{
+            margin: 20px 0;
+            text-align: center;
+        }
+        .features{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .features-cards .card{
+            width: 30%;
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .features-cards .card h3{
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        footer{
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px){
+            .features{
+                flex-direction: column;
+                align-items: center;
+            }
+            .features-cards .card{
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <script>
+        document.getElementById('startExamBtn').addEventListener('click', function() {
+            alert("Good luck with your exam! Let's begin!");
+        })
+    </script>
+</body>
+</html>
